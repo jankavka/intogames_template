@@ -104,7 +104,8 @@ html{
     font-size:18px;            /* ~ Figma */
     line-height:1.25;
     color:#FFC801;             /* žlutá blízká návrhu */
-    text-transform:uppercase;  /* některé položky jsou uppercase ve Figmě */
+    text-transform:uppercase; 
+    text-wrap: nowrap;
   }
   
   /* bílé doplňkové info */
@@ -120,7 +121,8 @@ html{
   .attend-panel .desc::before{
     content:"—";
     display:block;
-    color:#fff;
+    /* color:#fff; */
+    color: white;
     opacity:.6;
     margin:6px 0;
     line-height:1;
