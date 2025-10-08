@@ -10,9 +10,8 @@ html{
     background-color: var(--custom-yellow);
 }
 
-.custom-box{
-    background-color: black;
-    border-radius: 25px;
+.icons-box{
+    padding: 10px;
 }
 
 .icons-calendar {
@@ -24,8 +23,8 @@ html{
 }
 
 .icons-yellow{
-    height: 80px;
-    width: 80px;
+
+    align-self: center;
 }
 
 .align-title-center {
@@ -64,4 +63,85 @@ html{
     .sm\:text-10 {
         font-size: 0.8rem;
     }
+
 }
+
+/* === WHY TO ATTEND – black icons panel === */
+.attend-panel{
+    background:#000;
+    border-radius:28px;
+    padding:56px 64px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:38px 72px;             /* row / col gaps pro vzduch jako ve Figmě */
+    max-width:880px;           /* aby panel nebyl přes celý sloupec */
+    margin:0 auto;             /* centrování v pravém sloupci */
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
+  }
+  
+  /* jednotlivá „karta“ s ikonou */
+  .attend-panel .icon-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    min-width:0;               /* prevence přetékání dlouhého textu */
+  }
+  
+  /* ikony sjednocená velikost */
+  .attend-panel .icon-item img{
+    width:84px;
+    height:84px;
+    object-fit:contain;
+    margin-bottom:12px;
+  }
+  
+  /* žlutý titul – přesněji „hi“ */
+  .attend-panel .hi{
+    margin:6px 0 2px;
+    font-weight:800;
+    letter-spacing:.02em;
+    font-size:18px;            /* ~ Figma */
+    line-height:1.25;
+    color:#FFC801;             /* žlutá blízká návrhu */
+    text-transform:uppercase;  /* některé položky jsou uppercase ve Figmě */
+  }
+  
+  /* bílé doplňkové info */
+  .attend-panel .desc{
+    margin:0;
+    color:#fff;
+    opacity:.9;
+    font-size:14px;
+    line-height:1.35;
+  }
+  
+  /* drobná pomlčka mezi řádky (volitelné) – jako ve Figmě */
+  .attend-panel .desc::before{
+    content:"—";
+    display:block;
+    color:#fff;
+    opacity:.6;
+    margin:6px 0;
+    line-height:1;
+  }
+  
+  /* Responzivita: na tabletu 2 sloupce, na mobilu 1 */
+  @media (max-width: 992px){
+    .attend-panel{
+      grid-template-columns:repeat(2,1fr);
+      padding:40px 36px;
+      gap:30px 42px;
+      max-width:640px;
+    }
+  }
+  @media (max-width: 576px){
+    .attend-panel{
+      grid-template-columns:1fr;
+      padding:28px 24px;
+      gap:22px 0;
+      max-width:420px;
+    }
+  }
+  
+
