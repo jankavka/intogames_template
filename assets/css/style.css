@@ -157,7 +157,6 @@ html {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px 200px;
-    font-size: 1rem;
     grid-column-gap: 50px;
 
 }
@@ -179,4 +178,11 @@ html {
 .program .heading{
     text-transform: uppercase;
     margin-bottom: 100px;
+}
+
+.program .card-cont{
+    max-width: 80%;
+    color:black;
+    line-height: 1.5rem;
+    height:80%;
 }
