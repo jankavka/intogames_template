@@ -149,19 +149,25 @@ html {
     }
 }
 
-.what-we-do{
+.what-we-do {
     margin-bottom: 100px;
 }
 
-.program .main{
+
+
+
+
+/* Program section */
+
+.program .main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px 200px;
-    grid-column-gap: 50px;
+    column-gap: 50px;
 
 }
 
-.program .card{
+.program .card {
     border: 1px solid var(--custom-yellow);
     border-radius: 25px;
     padding-top: 20px;
@@ -170,19 +176,182 @@ html {
     min-height: 500px;
 }
 
-.program .title{
+.program .title {
     text-transform: uppercase;
     margin-bottom: 3rem;
 }
 
-.program .heading{
+.program .heading {
     text-transform: uppercase;
     margin-bottom: 100px;
 }
 
-.program .card-cont{
+.program .card-cont {
     max-width: 80%;
-    color:black;
+    color: black;
     line-height: 1.5rem;
-    height:80%;
+    height: 80%;
+}
+
+
+@media (max-width: 992px) {}
+
+
+@media (max-width: 576px) {
+    .program .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .program .heading {
+        margin-bottom: 2.5rem;
+    }
+
+    .program .card {
+        min-height: fit-content;
+        padding-bottom: 20px;
+    }
+}
+
+/* Carousel secttion */
+
+@media (max-width: 567px) {
+    .carousel {
+        margin-bottom: 3rem;
+    }
+}
+
+/* Speakers section */
+
+.speakers {
+    margin-bottom: 50px;
+}
+
+
+/* Partners section */
+
+.partners {
+    margin-bottom: 100px;
+}
+
+.partners .heading {
+    margin-bottom: 2rem;
+}
+
+.partners .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 400px;
+}
+
+.partners .title {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.partners .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    gap: 100px 80px;
+    padding: 50px 0 35px 0;
+}
+
+.partners .icon-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.partners .icon img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+}
+
+.partners .par p {
+    font-size: 1rem;
+
+}
+
+.partners .par {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 80%;
+}
+
+.partners .icon {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners .desc::before {
+    content: "-";
+    display: block;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+}
+
+.partners .hi {
+    color: var(--custom-yellow);
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.partners .partner-bg {
+    background-color: black;
+    width: 100%;
+}
+
+.partners .par-image {
+    text-align: center;
+}
+
+.partners .par-link {
+    color: white;
+    text-decoration: underline dotted;
+}
+
+@media (max-width: 576px) {
+    .partners .content {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        justify-content: start;
+        align-items: center;
+        gap: 0;
+    }
+
+    .partners .icon-panel {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .partners .icon {
+        margin-top: 20px;
+    }
+
+    .partners .par {
+        margin: 20px auto;
+        height: fit-content;
+
+    }
+
+    .partners .icon-panel {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
 }
