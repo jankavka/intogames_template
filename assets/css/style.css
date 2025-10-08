@@ -1,8 +1,8 @@
-html{
+html {
     --custom-yellow: #F8D93E;
 }
 
-.bg-grey{
+.bg-grey {
     background-color: #D9D9D9;
 }
 
@@ -10,7 +10,7 @@ html{
     background-color: var(--custom-yellow);
 }
 
-.icons-box{
+.icons-box {
     padding: 10px;
 }
 
@@ -22,7 +22,7 @@ html{
     width: 3.5rem;
 }
 
-.icons-yellow{
+.icons-yellow {
 
     align-self: center;
 }
@@ -32,11 +32,11 @@ html{
     align-items: center;
 }
 
-.pill-text{
+.pill-text {
     font-size: 1.2rem;
 }
 
-.text-yellow{
+.text-yellow {
     color: var(--custom-yellow);
 }
 
@@ -67,83 +67,116 @@ html{
 }
 
 /* === WHY TO ATTEND – black icons panel === */
-.attend-panel{
-    background:#000;
-    border-radius:28px;
-    padding:56px 64px;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:38px 72px;             
-    max-width:880px;          
-    margin:0 auto;            
-    box-shadow:0 18px 40px rgba(0,0,0,.18);
-  }
-  
-  /* jednotlivá „karta“ s ikonou */
-  .attend-panel .icon-item{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-    min-width:0;               
-  }
-  
-  /* ikony sjednocená velikost */
-  .attend-panel .icon-item img{
-    width:84px;
-    height:84px;
-    object-fit:contain;
-    margin-bottom:12px;
-  }
-  
-  /* žlutý titul – přesněji „hi“ */
-  .attend-panel .hi{
-    margin:6px 0 2px;
-    font-weight:800;
-    letter-spacing:.02em;
-    font-size:18px;            /* ~ Figma */
-    line-height:1.25;
-    color:#FFC801;             /* žlutá blízká návrhu */
-    text-transform:uppercase; 
+.attend-panel {
+    background: #000;
+    border-radius: 28px;
+    padding: 56px 64px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 38px 72px;
+    max-width: 880px;
+    margin: 0 auto;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .18);
+}
+
+/* jednotlivá „karta“ s ikonou */
+.attend-panel .icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 0;
+}
+
+/* ikony sjednocená velikost */
+.attend-panel .icon-item img {
+    width: 84px;
+    height: 84px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+/* žlutý titul – přesněji „hi“ */
+.attend-panel .hi {
+    margin: 6px 0 2px;
+    font-weight: 800;
+    letter-spacing: .02em;
+    font-size: 18px;
+    /* ~ Figma */
+    line-height: 1.25;
+    color: #FFC801;
+    /* žlutá blízká návrhu */
+    text-transform: uppercase;
     text-wrap: nowrap;
-  }
-  
-  /* bílé doplňkové info */
-  .attend-panel .desc{
-    margin:0;
-    color:#fff;
-    opacity:.9;
-    font-size:14px;
-    line-height:1.35;
-  }
-  
-  /* drobná pomlčka mezi řádky (volitelné) – jako ve Figmě */
-  .attend-panel .desc::before{
-    content:"—";
-    display:block;
+}
+
+/* bílé doplňkové info */
+.attend-panel .desc {
+    margin: 0;
+    color: #fff;
+    opacity: .9;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+/* drobná pomlčka mezi řádky (volitelné) – jako ve Figmě */
+.attend-panel .desc::before {
+    content: "—";
+    display: block;
     /* color:#fff; */
     color: white;
-    opacity:.6;
-    margin:6px 0;
-    line-height:1;
-  }
-  
-  /* Responzivita: na tabletu 2 sloupce, na mobilu 1 */
-  @media (max-width: 992px){
-    .attend-panel{
-      grid-template-columns:repeat(2,1fr);
-      padding:40px 36px;
-      gap:30px 42px;
-      max-width:640px;
-    }
-  }
-  @media (max-width: 576px){
-    .attend-panel{
-      grid-template-columns:1fr;
-      padding:28px 24px;
-      gap:22px 0;
-      max-width:420px;
-    }
-  }
-  
+    opacity: .6;
+    margin: 6px 0;
+    line-height: 1;
+}
 
+/* Responzivita: na tabletu 2 sloupce, na mobilu 1 */
+@media (max-width: 992px) {
+    .attend-panel {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 36px;
+        gap: 30px 42px;
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 576px) {
+    .attend-panel {
+        grid-template-columns: 1fr;
+        padding: 28px 24px;
+        gap: 22px 0;
+        max-width: 420px;
+    }
+}
+
+.what-we-do{
+    margin-bottom: 100px;
+}
+
+.program .main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 200px;
+    font-size: 1rem;
+    grid-column-gap: 50px;
+
+}
+
+.program .card{
+    border: 1px solid var(--custom-yellow);
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: var(--custom-yellow);
+    min-height: 500px;
+}
+
+.program .title{
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.program .heading{
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
