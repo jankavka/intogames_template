@@ -11787,7 +11787,7 @@ style+.ld-module-sd>.ld-module-dropdown:last-child {
     font-size: .1764705882em;
     line-height: 1em;
     text-transform: uppercase;
-    opacity: .5
+    opacity: .5;
 }
 
 @media screen and (max-width:991px) {

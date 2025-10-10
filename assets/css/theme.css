@@ -12083,6 +12083,7 @@ MOBULE HEADER
 	line-height: 1em;
 	text-transform: uppercase;
 	opacity: 0.5;
+	color: white;
 }
 
 @media screen and (max-width: 991px) {

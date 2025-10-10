@@ -456,11 +456,11 @@ html {
 .parties .ticket {
     display: flex;
     width: 90%;
-    height: 100px;
+    height: 185px;
     justify-content: space-around;
     align-items: center;
     background-color: #FFFFFF;
-    border-radius: 75px;
+    border-radius: 100px;
     margin-bottom: 35px;
 }
 
@@ -489,7 +489,7 @@ html {
 .parties .ticket-item {
     /* border: 1px solid black; */
     width: max-content;
-    min-height: 200px;
+    /* min-height: 200px; */
     text-align: center;
 
 }
@@ -498,9 +498,10 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     min-width: 50%;
     min-height: 100%;
+    padding-left: 20px;
 }
 
 .parties .par{
@@ -512,4 +513,65 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 576px){
+    .parties .ticket{
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .parties .date-time{
+        border: none;
+        margin: 10px 0 5px 0;
+    }
+
+    .parties .ticket-middle-item{
+        border: none;
+        margin: 5px 0 5px 0;
+    }
+
+    .parties .ticket-location{
+        margin: 10px 0 10px 0;
+        border: none;
+    }
+}
+
+/* section countdown */
+
+.cd .count-bg{
+    background-color: #000;
+    padding: 0;
+}
+
+.cd .count-block{
+    padding: 20px 0 20px 0;
+}
+
+.cd .count-text{
+    color: var(--custom-yellow);
+}
+
+.cd .cd-label{
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+}
+
+/* Labels of countdown */
+.cd .countdown-period{
+    color:white;
+    opacity: 1;
+    font-size: 1rem;
+    font-weight:lighter;
+}
+
+.cd .title{
+    color:var(--custom-yellow);
 }
