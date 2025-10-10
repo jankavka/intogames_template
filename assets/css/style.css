@@ -538,6 +538,10 @@ html {
         margin: 10px 0 10px 0;
         border: none;
     }
+    .parties{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
 }
 
 /* section countdown */
@@ -548,11 +552,12 @@ html {
 }
 
 .cd .count-block{
-    padding: 20px 0 20px 0;
+    padding: 50px 0 50px 0;
 }
 
 .cd .count-text{
     color: var(--custom-yellow);
+    font-size: 8rem;
 }
 
 .cd .cd-label{
@@ -574,4 +579,100 @@ html {
 
 .cd .title{
     color:var(--custom-yellow);
+}
+
+@media (max-width: 576px){
+    .cd .count-text{
+        font-size: 4rem;
+    }
+
+    .cd {
+        margin-bottom: 0;
+    }
+}
+
+/* faq section */
+
+.faq{
+    margin-top: 100px;
+}
+
+.faq .title{
+    align-self: flex-start;
+}
+
+@media (max-width: 576px){
+    .faq{
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+
+/* contact section */
+
+.contact{
+    background: linear-gradient(to bottom, #FFFFFF 0% 38%, #BEBDE0 38% 100%) ;
+    padding-top: 100px;
+}
+
+.contact .get-a-ticket{
+    font-size: 2rem;
+}
+
+.contact .title{
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.contact .sub-button{
+    background-color: var(--custom-yellow);
+    border: none;
+    text-transform: uppercase;
+}
+
+.contact .spec{
+    margin-top: 8.5rem;
+    line-height: 2rem;
+}
+
+.contact .bold{
+    font-weight:bold;
+}
+
+.contact .light{
+    font-weight: lighter;
+}
+
+
+@media (max-width: 576px){
+    .contact{
+        padding-top: 0;
+    }
+
+    .contact .title{
+        font-size: 2rem;
+    }
+
+    .contact .pic{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .sm\:box-reduce{
+        max-height: fit-content;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .contact .spec{
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .contact{
+        background: linear-gradient(to bottom, #FFFFFF 0% 23%, #BEBDE0 23% 100%) ;
+    }
 }
