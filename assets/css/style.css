@@ -378,7 +378,7 @@ html {
 .ostrava .pictures {
     display: grid;
     margin: 20px 20px;
-    grid-auto-rows: 250px;
+    grid-auto-rows: 301px;
     grid-template-columns: repeat(3, 1fr);
     /* grid-template-rows: 3; */
     gap: 20px 20px;
@@ -387,7 +387,6 @@ html {
 
 .ostrava .pic-item {
     background-color: grey;
-
     /* Temporary */
     display: flex;
     align-items: center;
@@ -424,6 +423,7 @@ html {
 .ostrava .photo2 {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
+
 }
 
 .ostrava .photo3 {
