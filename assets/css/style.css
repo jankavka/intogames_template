@@ -676,3 +676,98 @@ html {
         background: linear-gradient(to bottom, #FFFFFF 0% 23%, #BEBDE0 23% 100%) ;
     }
 }
+
+/* pricing section */
+
+.pricing .my-card-yellow{
+    background-color: var(--custom-yellow);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 25px;
+    height: 500px;
+    width: 350px;
+}
+
+.pricing .my-card-black{
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 25px;
+    height: 500px;
+    width: 350px;
+
+}
+
+.pricing .title{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.pricing .title-black{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.pricing .price{
+    font-weight: bolder;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.pricing .price-black{
+    font-weight: bolder;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.pricing .price-pill{
+    background-color: black;
+}
+
+.pricing .price-pill-black{
+    background-color: var(--custom-yellow);
+    width: 50%;
+}
+
+.pricing .crossed-out-price{
+    text-decoration: line-through;
+    
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.pricing .par{
+    margin: 80px 20px 80px 10px;
+    width: 60%;
+    
+}
+
+.pricing .mail-link{
+    color: var(--custom-yellow);
+}
+
+.pricing .price-cont{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+
+
+/* gamedevs section */
+
+.gamedevs .title{
+    text-transform: uppercase;
+}
+
+.gamedevs .soc-icons{
+    width: 30%;
+    height: 30%;
+}
+
+
+

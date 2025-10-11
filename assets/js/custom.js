@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+  //changes order of componenets on mobile device
+
   let reduction = function () {
     let spec = document.getElementById("pic-element");
     let parent = spec.parentNode;
