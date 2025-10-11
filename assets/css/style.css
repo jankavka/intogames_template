@@ -504,19 +504,19 @@ html {
     padding-left: 20px;
 }
 
-.parties .par{
-    margin:0;
+.parties .par {
+    margin: 0;
 }
 
-.parties .ticket-set{
+.parties .ticket-set {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-@media (max-width: 576px){
-    .parties .ticket{
+@media (max-width: 576px) {
+    .parties .ticket {
         /* display: flex; */
         flex-direction: column;
         justify-content: space-between;
@@ -524,21 +524,22 @@ html {
         height: fit-content;
     }
 
-    .parties .date-time{
+    .parties .date-time {
         border: none;
         margin: 10px 0 5px 0;
     }
 
-    .parties .ticket-middle-item{
+    .parties .ticket-middle-item {
         border: none;
         margin: 5px 0 5px 0;
     }
 
-    .parties .ticket-location{
+    .parties .ticket-location {
         margin: 10px 0 10px 0;
         border: none;
     }
-    .parties{
+
+    .parties {
         margin-bottom: 0;
         padding-bottom: 0;
     }
@@ -546,21 +547,21 @@ html {
 
 /* section countdown */
 
-.cd .count-bg{
+.cd .count-bg {
     background-color: #000;
     padding: 0;
 }
 
-.cd .count-block{
+.cd .count-block {
     padding: 50px 0 50px 0;
 }
 
-.cd .count-text{
+.cd .count-text {
     color: var(--custom-yellow);
     font-size: 8rem;
 }
 
-.cd .cd-label{
+.cd .cd-label {
     color: white;
     font-size: 1rem;
     font-weight: lighter;
@@ -570,19 +571,19 @@ html {
 }
 
 /* Labels of countdown */
-.cd .countdown-period{
-    color:white;
+.cd .countdown-period {
+    color: white;
     opacity: 1;
     font-size: 1rem;
-    font-weight:lighter;
+    font-weight: lighter;
 }
 
-.cd .title{
-    color:var(--custom-yellow);
+.cd .title {
+    color: var(--custom-yellow);
 }
 
-@media (max-width: 576px){
-    .cd .count-text{
+@media (max-width: 576px) {
+    .cd .count-text {
         font-size: 4rem;
     }
 
@@ -593,16 +594,16 @@ html {
 
 /* faq section */
 
-.faq{
+.faq {
     margin-top: 100px;
 }
 
-.faq .title{
+.faq .title {
     align-self: flex-start;
 }
 
-@media (max-width: 576px){
-    .faq{
+@media (max-width: 576px) {
+    .faq {
         padding-top: 0;
         margin-top: 0;
     }
@@ -611,75 +612,76 @@ html {
 
 /* contact section */
 
-.contact{
-    background: linear-gradient(to bottom, #FFFFFF 0% 38%, #BEBDE0 38% 100%) ;
+.contact {
+    background: linear-gradient(to bottom, #FFFFFF 0% 38%, #BEBDE0 38% 100%);
     padding-top: 100px;
 }
 
-.contact .get-a-ticket{
+.contact .get-a-ticket {
     font-size: 2rem;
 }
 
-.contact .title{
+.contact .title {
     text-transform: uppercase;
     line-height: 1.5;
 }
 
-.contact .sub-button{
+.contact .sub-button {
     background-color: var(--custom-yellow);
     border: none;
     text-transform: uppercase;
 }
 
-.contact .spec{
+.contact .spec {
     margin-top: 8.5rem;
     line-height: 2rem;
 }
 
-.contact .bold{
-    font-weight:bold;
+.contact .bold {
+    font-weight: bold;
 }
 
-.contact .light{
+.contact .light {
     font-weight: lighter;
 }
 
 
-@media (max-width: 576px){
-    .contact{
+@media (max-width: 576px) {
+    .contact {
         padding-top: 0;
     }
 
-    .contact .title{
+    .contact .title {
         font-size: 2rem;
     }
 
-    .contact .pic{
+    .contact .pic {
         visibility: hidden;
         height: 0;
         width: 0;
         margin: 0;
         padding: 0;
     }
-    .sm\:box-reduce{
+
+    .sm\:box-reduce {
         max-height: fit-content;
         margin-top: 20px;
         padding: 10px;
     }
 
-    .contact .spec{
+    .contact .spec {
         margin: 0;
         font-size: 1rem;
     }
 
-    .contact{
-        background: linear-gradient(to bottom, #FFFFFF 0% 23%, #BEBDE0 23% 100%) ;
+    .contact {
+        background: linear-gradient(to bottom, #FFFFFF 0% 23%, #BEBDE0 23% 100%);
     }
 }
 
 /* pricing section */
 
-.pricing .my-card-yellow{
+.pricing .my-card-yellow {
     background-color: var(--custom-yellow);
     padding-top: 30px;
     padding-bottom: 30px;
@@ -688,7 +690,7 @@ html {
     width: 350px;
 }
 
-.pricing .my-card-black{
+.pricing .my-card-black {
     background-color: black;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -698,76 +700,318 @@ html {
 
 }
 
-.pricing .title{
+.pricing .title {
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 0;
 }
 
-.pricing .title-black{
+.pricing .title-black {
     color: white;
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 0;
 }
 
-.pricing .price{
+.pricing .price {
     font-weight: bolder;
     color: white;
-    font-family:Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif
 }
 
-.pricing .price-black{
+.pricing .price-black {
     font-weight: bolder;
     color: black;
-    font-family:Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif
 }
 
-.pricing .price-pill{
+.pricing .price-pill {
     background-color: black;
 }
 
-.pricing .price-pill-black{
+.pricing .price-pill-black {
     background-color: var(--custom-yellow);
     width: 50%;
 }
 
-.pricing .crossed-out-price{
+.pricing .crossed-out-price {
     text-decoration: line-through;
-    
+
     color: white;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
 
-.pricing .par{
+.pricing .par {
     margin: 80px 20px 80px 10px;
     width: 60%;
-    
+
 }
 
-.pricing .mail-link{
+.pricing .mail-link {
     color: var(--custom-yellow);
 }
 
-.pricing .price-cont{
+.pricing .price-cont {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 100%;
+}
+
+@media (max-width: 576px) {
+    .pricing .price-cont {
+        flex-direction: column;
+    }
+
+    .pricing .my-card-black {
+        margin-bottom: 30px;
+    }
+
+    .pricing .my-card-yellow {
+        margin-bottom: 30px;
+    }
 }
 
 
 
 /* gamedevs section */
 
-.gamedevs .title{
+.gamedevs {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.gamedevs .title {
     text-transform: uppercase;
 }
 
-.gamedevs .soc-icons{
-    width: 30%;
-    height: 30%;
+.gamedevs .soc-icons {
+    width: fit-content;
+    height: 50%;
+    margin-right: 20px;
+}
+
+.gamedevs .icon-panel {
+    height: 100px;
+
+}
+
+.gamedevs .content-box {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+}
+
+.gamedevs .web-link {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+@media (max-width: 576px) {
+    .gamedevs {
+        margin-top: 0;
+        margin-bottom: 30px;
+        height: 100%;
+    }
+
+    .gamedevs .content-box {
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .gamedevs .title{
+        margin-bottom: 50px;
+    }
+
+    .gamedevs .par{
+        margin-bottom: 40px;
+    }
+
+    .gamedevs .web-link{
+        margin-bottom: 1000px;
+    }
+
+    .gamedevs .web-link-wrapper{
+        margin-bottom: 40px;
+    }
+}
+
+/* people section */
+
+.people {
+    background-color: black;
+    padding: 80px 0 80px 0;
+}
+
+.people .title {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+
+}
+
+.people .photo-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.people .people-cont {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.people .photo-mb {
+    margin-bottom: 35px;
+}
+
+
+@media (max-width:576px) {
+    .people {
+        padding: 50px 0 50px 0;
+    }
+
+    .people .people-cont {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .people .photo-cont {
+        width: 40%;
+        margin-bottom: 40px;
+    }
+
+    .people .title {
+        margin-bottom: 50px;
+    }
+
+    .people .photo-mb {
+        margin-bottom: 20px;
+    }
+}
+
+/* plan section */
+
+.plan {
+    background-color: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* 1) turning off violet line */
+.module-roadmap .one-roadmap-bar,
+.module-roadmap .vertical-line {
+    display: none !important;
+}
+
+/* conatiner with whole line */
+.module-roadmap .one-roadmap-inner {
+    position: relative;
+}
+
+/* yellow line across whole cont */
+.module-roadmap .one-roadmap-inner::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 18px;
+    bottom: 25px;
+    width: 4px;
+    background: var(--custom-yellow);
+    border-radius: 4px;
+}
+
+/* push item to the right so the dot fits the right place */
+.module-roadmap .one-roadmap-item {
+    position: relative;
+    padding-left: 30px;
+}
+
+/* yellow dot next to every componenet */
+.module-roadmap .one-roadmap-item::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    background: var(--custom-yellow);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #000;
+    /* volitelné: černý „kroužek“ kolem jako na maketě */
+}
+
+/* right circle markers (possibility to change to color)  */
+.module-roadmap .one-roadmap-mark {
+    border-color: black !important;
+    color: black;
+    background-color: white;
+    opacity: 1 !important;
+}
+
+.module-roadmap .checked {
+    background-color: var(--custom-yellow) !important;
 }
 
 
 
+@media (max-width: 576px) {
+    .plan .title {
+        font-size: 0.9rem;
+        max-width: 90%;
+        margin-right: 0;
+    }
+}
+
+/* subscribe section */
+
+.subscribe {
+    background-color: var(--custom-yellow);
+}
+
+.subscribe .title {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.subscribe .but-color {
+    background-color: black;
+    color: var(--custom-yellow);
+    border: none;
+}
+
+.subscribe .but-color:hover {
+    background-color: var(--custom-yellow);
+    color: black;
+    border: 1px solid black;
+}
+
+/* footer section */
+
+footer .bg-black {
+    background-color: black;
+}
+
+footer .my-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+footer .foot-icon {
+    stroke: white;
+    width: 2.5rem;
+
+}
+
+footer .icons {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 65%;
+}
