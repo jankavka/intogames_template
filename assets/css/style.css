@@ -26,24 +26,32 @@ h6 {
     font-family: "Russo One";
 }
 
-/* .bg-grey {
-    background-color: #D9D9D9;
-} */
+
+/* navigation section */
 
 .custom-yellow-bg {
     background-color: var(--custom-yellow);
 }
 
-.icons-box {
+/* .icons-box {
     padding: 10px;
+} */
+.my-yellow-box {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .icons-calendar {
-    width: 5rem;
+    width: fit-content;
+    max-width: 5rem;
+    height: auto;
+    padding-right: 1rem;
 }
 
 .icons-location {
-    width: 3.5rem;
+    width: 4rem;
+    height: auto;
+    padding-right: 0.3rem;
 }
 
 .icons-yellow {
@@ -90,17 +98,31 @@ h6 {
 
 }
 
+@media (max-width: 576px) {
+    .sm\:mb-20 {
+        margin-bottom: 20px;
+    }
 
- /* What we do section */
+    .sm\:ptb-20 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
- .what-we-do .title{
+
+}
+
+
+/* What we do section */
+
+.what-we-do .title {
     margin-bottom: 50px;
- }
+}
+
 /* === WHY TO ATTEND – black icons panel === */
 .what-we-do .attend-panel {
     background: #000;
     border-radius: 28px;
-    padding: 56px 64px;
+    padding: 20px 64px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 38px 72px;
@@ -252,10 +274,6 @@ h6 {
 
 /* Partners section */
 
-.partners {
-    margin-bottom: 100px;
-}
-
 .partners .heading {
     margin-bottom: 2rem;
     text-transform: uppercase;
@@ -265,7 +283,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     height: 400px;
 }
@@ -344,7 +362,8 @@ h6 {
 
 .partners .par-link {
     color: white;
-    text-decoration: underline dotted;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 @media (max-width: 576px) {
@@ -379,98 +398,41 @@ h6 {
     }
 }
 
-/* Ostrava section */
+/* Gallery section */
 
-.ostrava .title {
+.gallery {
+    background-color: var(--custom-yellow);
+}
+
+.gallery .title {
     text-transform: uppercase;
     color: black;
     margin-bottom: 40px;
 }
 
-.ostrava .ostrava-bg {
-    background-color: var(--custom-yellow);
-    padding-bottom: 100px;
-}
-
-.ostrava .par {
+.gallery .par {
     color: black;
     max-width: 48%;
     line-height: 1.2rem;
     font-weight: 300;
 }
 
-.ostrava .par-bold{
-    font-weight: 800;
-}
-
-.ostrava .pictures {
-    display: grid;
-    margin: 20px 20px;
-    grid-auto-rows: 301px;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: 3; */
-    gap: 20px 20px;
-
-}
-
-.ostrava .pic-item {
-    background-color: grey;
-    /* Temporary */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-
-}
-
-.ostrava .text-set {
+.gallery .text-set{
     padding-top: 40px;
     margin-bottom: 60px;
 }
 
-.ostrava .map {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
+.gallery .par-bold {
+    font-weight: 800;
 }
 
-.ostrava .accommodation {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-.ostrava .photo1 {
-    grid-column: 3 / 4;
-    grid-row: 1 /3;
-}
-
-.ostrava .parking {
-    grid-column: 1 / 2;
-    grid-row: 3 / 3;
-}
-
-.ostrava .photo2 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 4;
-
-}
-
-.ostrava .photo3 {
-    grid-column: 3 / 4;
-    grid-row: 3 /4;
-}
-
-@media (max-width: 576px) {
-    .ostrava .pictures {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .ostrava .pic-item {
-        min-height: 200px;
-    }
-
-    .ostrava .par {
+@media (max-width: 576px){
+    .gallery .par {
         max-width: 100%;
+    }
+
+    .gallery {
+        padding-top: 0px;
     }
 }
 
@@ -485,7 +447,7 @@ h6 {
     display: flex;
     color: black;
     width: 90%;
-    height: 185px;
+    height: 100px;
     justify-content: space-around;
     align-items: center;
     background-color: #FFFFFF;
@@ -504,7 +466,11 @@ h6 {
     width: max-content;
     font-weight: 900;
     color: black;
-    font-size:x-large;
+    font-size: x-large;
+}
+
+.parties small{
+    font-size: 0.8rem;
 }
 
 
@@ -512,13 +478,14 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     min-height: 100%;
     border-right: 5px solid var(--custom-grey);
     min-width: 30%;
+    padding-left: 20px;
 }
 
-.parties .ticket-middle-item > p{
+.parties .ticket-middle-item>p {
     font-weight: 800;
     font-size: x-large;
 }
@@ -539,7 +506,7 @@ h6 {
     min-width: 50%;
     min-height: 100%;
     padding-left: 20px;
-    font-weight:normal;
+    font-weight: normal;
     font-size: x-large;
 }
 
@@ -547,7 +514,7 @@ h6 {
     margin-bottom: 10px;
 }
 
-.parties a{
+.parties a {
     color: black;
     text-decoration: underline;
 }
@@ -573,17 +540,19 @@ h6 {
         margin: 10px 0 5px 0;
         font-size: medium;
     }
-    .parties .ticket-middle-item > p{
+
+    .parties .ticket-middle-item>p {
         font-size: medium;
     }
 
-    .parties a{
-        text-wrap:wrap;
+    .parties a {
+        text-wrap: wrap;
         font-size: small;
     }
 
     .parties .ticket-middle-item {
         border: none;
+        align-items: center;
         margin: 5px 0 5px 0;
     }
 
@@ -595,9 +564,17 @@ h6 {
 
     }
 
+    .parties .title{
+        margin-bottom: 0px;
+    }
+
     .parties {
         margin-bottom: 0;
         padding-bottom: 0;
+    }
+
+    .parties .par {
+        margin-bottom: 2px;
     }
 }
 
@@ -850,7 +827,7 @@ h6 {
 }
 
 .gamedevs .soc-icons {
-    width: fit-content;
+    width: auto;
     height: 50%;
     margin-right: 20px;
 }
@@ -888,7 +865,7 @@ h6 {
 
     .gamedevs .title {
         margin-bottom: 50px;
-        font-size:40px;
+        font-size: 40px;
         font-weight: normal;
         line-height: normal;
         letter-spacing: normal;
@@ -906,12 +883,12 @@ h6 {
         margin-bottom: 40px;
     }
 
-    .gamedevs .soc-icons{
+    .gamedevs .soc-icons {
         height: 50px;
         width: 50px;
     }
 
-    .gamedevs .icon-panel{
+    .gamedevs .icon-panel {
         height: 100px;
     }
 }
@@ -1066,6 +1043,28 @@ h6 {
     border: 1px solid black;
 }
 
+.subscribe .sub-button{
+    border-radius: 50px;
+    min-width: 100px;
+    color: white;
+    width: 400px;
+    height: 60px;
+    justify-self: center;
+    margin: 10px 0 10px 0;
+    background-color: black;
+}
+
+.subscribe .sub-button:hover{
+    background-color: var(--custom-yellow);
+    color: black;
+}
+
+@media (max-width: 576px){
+    .subscribe .sub-button{
+        width: 80%;
+    }
+}
+
 /* footer section */
 
 footer .bg-black {
@@ -1076,7 +1075,7 @@ footer .my-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 footer .foot-icon {
@@ -1092,3 +1091,4 @@ footer .icons {
     align-self: center;
     width: 65%;
 }
+
