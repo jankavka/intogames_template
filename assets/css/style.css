@@ -11,6 +11,8 @@
 html {
     --custom-yellow: #F8D93E;
     --custom-grey: #D9D9D9;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 body {
@@ -76,6 +78,16 @@ h6 {
 .ticket-button {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+@media (max-width: 992px) {
+    .pill-text {
+        font-size: 1rem;
+    }
+
+    .md-justify {
+        justify-content: flex-start;
+    }
 }
 
 
@@ -230,15 +242,41 @@ h6 {
 }
 
 .program .card-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 80%;
     color: black;
     line-height: 1.5rem;
-    height: 80%;
+    height: 70%;
     font-weight: light;
 }
 
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+
+    .program .card {
+        max-width: 40%;
+        margin-top: 29px;
+    }
+
+    .program .main {
+        /* grid-template-columns: repeat(2, 1fr); */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .program .heading {
+        margin-bottom: 0rem;
+        margin-left: 50px;
+    }
+
+    .program .card-cont {
+        max-width: 95%;
+    }
+
+}
 
 
 @media (max-width: 576px) {
@@ -255,6 +293,7 @@ h6 {
         min-height: fit-content;
         padding-bottom: 20px;
     }
+
 }
 
 /* Carousel secttion */
@@ -320,6 +359,10 @@ h6 {
 
 }
 
+.partners .desc {
+    text-align: center;
+}
+
 .partners .par {
     display: flex;
     flex-direction: column;
@@ -365,6 +408,7 @@ h6 {
     font-weight: bold;
     text-decoration: underline;
 }
+
 
 @media (max-width: 576px) {
     .partners .content {
@@ -417,7 +461,7 @@ h6 {
     font-weight: 300;
 }
 
-.gallery .text-set{
+.gallery .text-set {
     padding-top: 40px;
     margin-bottom: 60px;
 }
@@ -426,7 +470,7 @@ h6 {
     font-weight: 800;
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
     .gallery .par {
         max-width: 100%;
     }
@@ -466,10 +510,10 @@ h6 {
     width: max-content;
     font-weight: 900;
     color: black;
-    font-size: x-large;
+    font-size: large;
 }
 
-.parties small{
+.parties small {
     font-size: 0.8rem;
 }
 
@@ -507,7 +551,7 @@ h6 {
     min-height: 100%;
     padding-left: 20px;
     font-weight: normal;
-    font-size: x-large;
+    font-size: large;
 }
 
 .parties .par {
@@ -525,6 +569,19 @@ h6 {
     justify-content: space-between;
     align-items: center;
 }
+
+@media(max-width: 992px) {
+    .parties .date-time {
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    .parties .ticket-middle-item>p {
+        font-weight: 700;
+        font-size: medium;
+    }
+}
+
 
 @media (max-width: 576px) {
     .parties .ticket {
@@ -564,7 +621,7 @@ h6 {
 
     }
 
-    .parties .title{
+    .parties .title {
         margin-bottom: 0px;
     }
 
@@ -615,6 +672,12 @@ h6 {
     color: var(--custom-yellow);
 }
 
+@media (max-width: 992px) {
+    .cd .count-text {
+        font-size: 4rem;
+    }
+}
+
 @media (max-width: 576px) {
     .cd .count-text {
         font-size: 4rem;
@@ -637,6 +700,20 @@ h6 {
 
 .faq h4 {
     font-family: "Inter";
+}
+
+@media (max-width: 992px) {
+    .faq {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 1200px){
+    .faq{
+        margin-top: 10px;
+        padding-top: 20px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -666,7 +743,9 @@ h6 {
 .contact .sub-button {
     background-color: var(--custom-yellow);
     border: none;
+    color: black;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .contact .spec {
@@ -680,6 +759,27 @@ h6 {
 
 .contact .light {
     font-weight: lighter;
+}
+
+@media (max-width: 992px) {
+    .contact .title {
+        font-size: 3rem !important;
+    }
+
+    .contact {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contact .title {
+        font-size: 4rem;
+    }
+
+    .contact .spec {
+        max-width: 90%;
+    }
 }
 
 
@@ -741,6 +841,7 @@ h6 {
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 0;
+    text-wrap: wrap;
 }
 
 .pricing .title-black {
@@ -793,6 +894,33 @@ h6 {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+@media (max-width: 992px) {
+    .pricing .price-cont {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 100px;
+    }
+
+    .pricing .heading {
+        margin-left: 30px;
+    }
+
+    .pricing {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .pricing .my-card-yellow {
+        width: 18rem;
+    }
+
+    .pricing .my-card-black {
+        width: 18rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -849,6 +977,12 @@ h6 {
     text-decoration: underline;
     font-weight: bold;
 
+}
+
+@media(max-width: 992px) {
+    .gamedevs .soc-icons {
+        height: 70%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -920,6 +1054,19 @@ h6 {
 
 .people .photo-mb {
     margin-bottom: 35px;
+}
+
+@media (max-width: 992px) {
+    .people .people-cont {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        column-gap: 30px;
+    }
+
+    .people .title{
+        margin-left: 55px;
+    }
 }
 
 
@@ -1010,6 +1157,10 @@ h6 {
     background-color: var(--custom-yellow) !important;
 }
 
+.plan .top-title {
+    margin-bottom: 40px;
+}
+
 
 
 @media (max-width: 576px) {
@@ -1018,6 +1169,7 @@ h6 {
         max-width: 90%;
         margin-right: 0;
     }
+
 }
 
 /* subscribe section */
@@ -1043,7 +1195,7 @@ h6 {
     border: 1px solid black;
 }
 
-.subscribe .sub-button{
+.subscribe .sub-button {
     border-radius: 50px;
     min-width: 100px;
     color: white;
@@ -1054,13 +1206,13 @@ h6 {
     background-color: black;
 }
 
-.subscribe .sub-button:hover{
+.subscribe .sub-button:hover {
     background-color: var(--custom-yellow);
     color: black;
 }
 
-@media (max-width: 576px){
-    .subscribe .sub-button{
+@media (max-width: 576px) {
+    .subscribe .sub-button {
         width: 80%;
     }
 }
@@ -1091,4 +1243,3 @@ footer .icons {
     align-self: center;
     width: 65%;
 }
-
