@@ -1,11 +1,34 @@
+@font-face {
+    font-family: "Russo One";
+    src: url("../fonts/russo-one/RussoOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/Inter-VariableFont_opsz,wght.ttf");
+}
+
 html {
     --custom-yellow: #F8D93E;
     --custom-grey: #D9D9D9;
 }
 
-.bg-grey {
-    background-color: #D9D9D9;
+body {
+    font-family: "Inter";
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Russo One";
+}
+
+/* .bg-grey {
+    background-color: #D9D9D9;
+} */
 
 .custom-yellow-bg {
     background-color: var(--custom-yellow);
@@ -67,8 +90,14 @@ html {
 
 }
 
+
+ /* What we do section */
+
+ .what-we-do .title{
+    margin-bottom: 50px;
+ }
 /* === WHY TO ATTEND – black icons panel === */
-.attend-panel {
+.what-we-do .attend-panel {
     background: #000;
     border-radius: 28px;
     padding: 56px 64px;
@@ -80,8 +109,7 @@ html {
     box-shadow: 0 18px 40px rgba(0, 0, 0, .18);
 }
 
-/* jednotlivá „karta“ s ikonou */
-.attend-panel .icon-item {
+.what-we-do .attend-panel .icon-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,30 +117,25 @@ html {
     min-width: 0;
 }
 
-/* ikony sjednocená velikost */
-.attend-panel .icon-item img {
+.what-we-do .attend-panel .icon-item img {
     width: 84px;
     height: 84px;
     object-fit: contain;
     margin-bottom: 12px;
 }
 
-/* žlutý titul – přesněji „hi“ */
-.attend-panel .hi {
+.what-we-do .attend-panel .hi {
     margin: 6px 0 2px;
     font-weight: 800;
     letter-spacing: .02em;
     font-size: 18px;
-    /* ~ Figma */
     line-height: 1.25;
     color: #FFC801;
-    /* žlutá blízká návrhu */
     text-transform: uppercase;
     text-wrap: nowrap;
 }
 
-/* bílé doplňkové info */
-.attend-panel .desc {
+.what-we-do .attend-panel .desc {
     margin: 0;
     color: #fff;
     opacity: .9;
@@ -120,20 +143,17 @@ html {
     line-height: 1.35;
 }
 
-/* drobná pomlčka mezi řádky (volitelné) – jako ve Figmě */
-.attend-panel .desc::before {
+.what-we-do .attend-panel .desc::before {
     content: "—";
     display: block;
-    /* color:#fff; */
     color: white;
     opacity: .6;
     margin: 6px 0;
     line-height: 1;
 }
 
-/* Responzivita: na tabletu 2 sloupce, na mobilu 1 */
 @media (max-width: 992px) {
-    .attend-panel {
+    .what-we-do .attend-panel {
         grid-template-columns: repeat(2, 1fr);
         padding: 40px 36px;
         gap: 30px 42px;
@@ -142,7 +162,7 @@ html {
 }
 
 @media (max-width: 576px) {
-    .attend-panel {
+    .what-we-do .attend-panel {
         grid-template-columns: 1fr;
         padding: 28px 24px;
         gap: 22px 0;
@@ -153,7 +173,6 @@ html {
 .what-we-do {
     margin-bottom: 100px;
 }
-
 
 
 
@@ -171,8 +190,9 @@ html {
 .program .card {
     border: 1px solid var(--custom-yellow);
     border-radius: 25px;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
     background-color: var(--custom-yellow);
     min-height: 500px;
 }
@@ -192,6 +212,7 @@ html {
     color: black;
     line-height: 1.5rem;
     height: 80%;
+    font-weight: light;
 }
 
 
@@ -237,6 +258,7 @@ html {
 
 .partners .heading {
     margin-bottom: 2rem;
+    text-transform: uppercase;
 }
 
 .partners .logos {
@@ -362,6 +384,7 @@ html {
 .ostrava .title {
     text-transform: uppercase;
     color: black;
+    margin-bottom: 40px;
 }
 
 .ostrava .ostrava-bg {
@@ -373,6 +396,11 @@ html {
     color: black;
     max-width: 48%;
     line-height: 1.2rem;
+    font-weight: 300;
+}
+
+.ostrava .par-bold{
+    font-weight: 800;
 }
 
 .ostrava .pictures {
@@ -455,6 +483,7 @@ html {
 
 .parties .ticket {
     display: flex;
+    color: black;
     width: 90%;
     height: 185px;
     justify-content: space-around;
@@ -473,6 +502,9 @@ html {
     border-right: 5px solid var(--custom-grey);
     min-width: 20%;
     width: max-content;
+    font-weight: 900;
+    color: black;
+    font-size:x-large;
 }
 
 
@@ -484,6 +516,11 @@ html {
     min-height: 100%;
     border-right: 5px solid var(--custom-grey);
     min-width: 30%;
+}
+
+.parties .ticket-middle-item > p{
+    font-weight: 800;
+    font-size: x-large;
 }
 
 .parties .ticket-item {
@@ -502,10 +539,17 @@ html {
     min-width: 50%;
     min-height: 100%;
     padding-left: 20px;
+    font-weight:normal;
+    font-size: x-large;
 }
 
 .parties .par {
-    margin: 0;
+    margin-bottom: 10px;
+}
+
+.parties a{
+    color: black;
+    text-decoration: underline;
 }
 
 .parties .ticket-set {
@@ -527,6 +571,15 @@ html {
     .parties .date-time {
         border: none;
         margin: 10px 0 5px 0;
+        font-size: medium;
+    }
+    .parties .ticket-middle-item > p{
+        font-size: medium;
+    }
+
+    .parties a{
+        text-wrap:wrap;
+        font-size: small;
     }
 
     .parties .ticket-middle-item {
@@ -536,7 +589,10 @@ html {
 
     .parties .ticket-location {
         margin: 10px 0 10px 0;
-        border: none;
+        font-size: medium;
+        align-items: center;
+        max-width: 80%;
+
     }
 
     .parties {
@@ -600,6 +656,10 @@ html {
 
 .faq .title {
     align-self: flex-start;
+}
+
+.faq h4 {
+    font-family: "Inter";
 }
 
 @media (max-width: 576px) {
@@ -784,6 +844,9 @@ html {
 
 .gamedevs .title {
     text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 0.2rem;
+    font-weight: 800;
 }
 
 .gamedevs .soc-icons {
@@ -823,19 +886,23 @@ html {
         height: 100%;
     }
 
-    .gamedevs .title{
+    .gamedevs .title {
         margin-bottom: 50px;
+        font-size:40px;
+        font-weight: normal;
+        line-height: normal;
+        letter-spacing: normal;
     }
 
-    .gamedevs .par{
+    .gamedevs .par {
         margin-bottom: 40px;
     }
 
-    .gamedevs .web-link{
+    .gamedevs .web-link {
         margin-bottom: 1000px;
     }
 
-    .gamedevs .web-link-wrapper{
+    .gamedevs .web-link-wrapper {
         margin-bottom: 40px;
     }
 }
