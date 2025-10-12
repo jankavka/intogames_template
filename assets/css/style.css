@@ -287,10 +287,12 @@ h6 {
 
     .program .heading {
         margin-bottom: 2.5rem;
+        margin-left: 0px;
     }
 
     .program .card {
         min-height: fit-content;
+        max-width: fit-content;
         padding-bottom: 20px;
     }
 
@@ -602,10 +604,22 @@ h6 {
         border: none;
         margin: 10px 0 5px 0;
         font-size: medium;
+        text-align: start;
+        align-items: center;
     }
 
     .parties .ticket-middle-item>p {
         font-size: medium;
+
+    }
+
+    .parties .text-start{
+        text-align: center;
+    }
+
+    .parties .ticket-middle-item{
+        text-align: center;
+        align-items: center;
     }
 
     .parties a {
