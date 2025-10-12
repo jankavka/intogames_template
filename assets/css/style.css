@@ -905,6 +905,15 @@ h6 {
     .gamedevs .web-link-wrapper {
         margin-bottom: 40px;
     }
+
+    .gamedevs .soc-icons{
+        height: 50px;
+        width: 50px;
+    }
+
+    .gamedevs .icon-panel{
+        height: 100px;
+    }
 }
 
 /* people section */
