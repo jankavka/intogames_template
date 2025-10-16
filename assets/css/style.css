@@ -45,15 +45,16 @@ h6 {
 
 .icons-calendar {
     width: fit-content;
-    max-width: 5rem;
+    max-width: 4rem;
     height: auto;
     padding-right: 1rem;
 }
 
 .icons-location {
-    width: 4rem;
+    width: 2.5rem;
     height: auto;
     padding-right: 0.3rem;
+
 }
 
 .icons-yellow {
@@ -108,6 +109,30 @@ h6 {
         font-size: 0.8rem;
     }
 
+    .icons-calendar{
+        width: 20%;
+    }
+
+    .my-yellow-box {
+        display: flex;
+        flex-direction: row !important;
+       width: 300px;
+
+    }
+    .md\:mb-20{
+        margin-bottom: 20px;
+    }
+
+    .icons-location{
+        width: 2rem;
+    }
+
+    .md-align-center{
+        text-align: center;
+        align-items: center;
+        margin-top: 0;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -120,6 +145,25 @@ h6 {
         padding-bottom: 20px;
     }
 
+    .sm\:justify-center {
+        align-items: center;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
+    }
+
+    button {
+        justify-self: center;
+    }
+
 
 }
 
@@ -128,6 +172,7 @@ h6 {
 
 .what-we-do .title {
     margin-bottom: 50px;
+
 }
 
 /* === WHY TO ATTEND – black icons panel === */
@@ -258,6 +303,8 @@ h6 {
     .program .card {
         max-width: 40%;
         margin-top: 29px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .program .main {
@@ -278,6 +325,25 @@ h6 {
 
 }
 
+@media (max-width: 776px) {
+    .program .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .program .heading {
+        margin-bottom: 2.5rem;
+        margin-left: 0;
+    }
+
+    .program .card {
+        min-height: fit-content;
+        max-width: fit-content;
+        padding-bottom: 20px;
+    }
+
+}
+
 
 @media (max-width: 576px) {
     .program .main {
@@ -287,7 +353,7 @@ h6 {
 
     .program .heading {
         margin-bottom: 2.5rem;
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .program .card {
@@ -442,6 +508,10 @@ h6 {
         margin-top: 20px;
         margin-bottom: 30px;
     }
+
+    .partners .par {
+        align-items: center;
+    }
 }
 
 /* Gallery section */
@@ -472,8 +542,8 @@ h6 {
     font-weight: 800;
 }
 
-@media (max-width: 1200px){
-    .gallery .my-custom{
+@media (max-width: 1200px) {
+    .gallery .my-custom {
         height: 40%;
     }
 }
@@ -544,7 +614,7 @@ h6 {
 
 .parties .ticket-item {
     /* border: 1px solid black; */
-    width: max-content;
+    width: fit-content;
     /* min-height: 200px; */
     text-align: center;
 
@@ -604,7 +674,7 @@ h6 {
         border: none;
         margin: 10px 0 5px 0;
         font-size: medium;
-        text-align: start;
+        text-align: center;
         align-items: center;
     }
 
@@ -613,13 +683,17 @@ h6 {
 
     }
 
-    .parties .text-start{
+    .parties .text-start {
         text-align: center;
     }
 
-    .parties .ticket-middle-item{
+    .parties .ticket-middle-item {
         text-align: center;
         align-items: center;
+        padding: 0;
+        border: none;
+        justify-content: center;
+        margin: 5px 0 5px 0;
     }
 
     .parties a {
@@ -627,17 +701,13 @@ h6 {
         font-size: small;
     }
 
-    .parties .ticket-middle-item {
-        border: none;
-        align-items: center;
-        margin: 5px 0 5px 0;
-    }
-
     .parties .ticket-location {
         margin: 10px 0 10px 0;
         font-size: medium;
         align-items: center;
+        justify-content: center;
         max-width: 80%;
+        padding: 0;
 
     }
 
@@ -729,8 +799,8 @@ h6 {
     }
 }
 
-@media (max-width: 1200px){
-    .faq{
+@media (max-width: 1200px) {
+    .faq {
         margin-top: 10px;
         padding-top: 20px;
     }
@@ -834,6 +904,11 @@ h6 {
     .contact {
         background: linear-gradient(to bottom, #FFFFFF 0% 23%, #BEBDE0 23% 100%);
     }
+
+    .contact .heading {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* pricing section */
@@ -924,10 +999,6 @@ h6 {
         column-gap: 100px;
     }
 
-    .pricing .heading {
-        margin-left: 30px;
-    }
-
     .pricing {
         padding-bottom: 0;
     }
@@ -955,6 +1026,10 @@ h6 {
 
     .pricing .my-card-yellow {
         margin-bottom: 30px;
+    }
+
+    .pricing .heading {
+        margin-left: 0;
     }
 }
 
@@ -988,7 +1063,8 @@ h6 {
 .gamedevs .content-box {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    /* height: 500px; */
+    height: fit-content;
     justify-content: space-between;
 }
 
@@ -1002,6 +1078,24 @@ h6 {
 @media(max-width: 992px) {
     .gamedevs .soc-icons {
         height: 70%;
+    }
+
+    .gamedevs .content-box{
+        align-items: start;
+    }
+
+    .gamedevs .md\:text-start{
+        text-align: start;
+    }
+}
+
+@media (max-width: 768px){
+    .gamedevs .soc-icons {
+        height: 30px;
+    }
+
+    .gamedevs .icon-panel{
+        padding-bottom: 20px;
     }
 }
 
@@ -1084,7 +1178,7 @@ h6 {
         column-gap: 30px;
     }
 
-    .people .title{
+    .people .title {
         margin-left: 55px;
     }
 }
@@ -1096,17 +1190,21 @@ h6 {
     }
 
     .people .people-cont {
+        text-align: center;
         flex-wrap: wrap;
         justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
     }
 
     .people .photo-cont {
-        width: 40%;
+        width: 80%;
         margin-bottom: 40px;
     }
 
     .people .title {
         margin-bottom: 50px;
+        margin-left: 0;
     }
 
     .people .photo-mb {
