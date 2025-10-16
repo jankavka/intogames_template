@@ -11,15 +11,17 @@ document.addEventListener("DOMContentLoaded", function () {
     let gameParent = document.getElementById("gamedevs_logo_parent");
     let mobDevGamePar = document.getElementById("content-box");
 
-    if (window.innerWidth <= 576) {
+    if (window.innerWidth <= 992) {
       //removing element from gamedev section and appending it to the end of section
-      gameParent.removeChild(gameLogo);
+      if (gameLogo.parentNode === gameParent) {
+        gameParent.removeChild(gameLogo);
+      }
       mobDevGamePar.appendChild(gameLogo);
 
       //removing pic from conact section and appending it as first element
       parent.removeChild(spec);
       parent.appendChild(spec);
-    } else if (window.innerWidth > 576) {
+    } else if (window.innerWidth > 992) {
       //resizing to big screeen
       parent.removeChild(spec);
       parent.prepend(spec);
@@ -29,23 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  //similar function as above
-  let reduction2 = function () {
-    let spec = document.getElementById("pic-element");
-    let parent = spec.parentNode;
-
-    if (window.innerWidth <= 992) {
-      parent.removeChild(spec);
-      parent.appendChild(spec);
-    } else if (window.innerWidth > 992) {
-      parent.removeChild(spec);
-      parent.prepend(spec);
-    }
-  };
-
   reduction();
-  reduction2();
 
   window.addEventListener("resize", reduction);
-  window.addEventListener("resize", reduction2);
 });

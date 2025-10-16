@@ -851,6 +851,12 @@ h6 {
     font-weight: lighter;
 }
 
+@media (max-width: 1024px){
+    .contact .spec{
+        margin-left: 3rem;
+    }
+}
+
 @media (max-width: 992px) {
     .contact .title {
         font-size: 3rem !important;
@@ -876,6 +882,10 @@ h6 {
 @media (max-width: 576px) {
     .contact {
         padding-top: 0;
+    }
+
+    .contact .spec{
+        margin-left: 0;
     }
 
     .contact .title {
@@ -1087,6 +1097,10 @@ h6 {
     .gamedevs .md\:text-start{
         text-align: start;
     }
+
+    .gamedevs .content-box{
+        align-items: center;
+    }
 }
 
 @media (max-width: 768px){
@@ -1180,8 +1194,8 @@ h6 {
     }
 
     .people .title {
-        margin-left: 55px;
-    }
+        text-align: center;
+    } 
 }
 
 
