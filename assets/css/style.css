@@ -1109,6 +1109,7 @@ h6 {
     .gamedevs .content-box {
         justify-content: space-evenly;
         height: 100%;
+        align-items: center;
     }
 
     .gamedevs .title {
